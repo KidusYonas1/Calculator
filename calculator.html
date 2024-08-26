@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="calculator.css">
+    <title>Calculator App</title>
+</head>
+    <body>
+    <div class="calculator">
+        <div class="headContent">
+            <h3 class="text">Calc</h3>
+            <div>
+                <button type="button" id="dark-button"><i class='bx bx-moon'></i></button>
+                <button type="button" id="light-button"><i class='bx bx-sun' ></i></button>
+            </div>
+        </div>
+        <input type="text" id="display-input" readonly/>
+        <div class="buttons">
+            <button type="button" class="button blue" onclick="clearContent('AC')">AC</button>
+            <button type="button" class="button blue" onclick="clearContent('C')">C</button>
+            <button type="button" class="button blue" onclick="appendContent('%')">%</button>
+            <button type="button" class="button red" onclick="appendContent('/')">÷</button>
+            <button type="button" class="button white" onclick="appendContent('7')">7</button>
+            <button type="button" class="button white" onclick="appendContent('8')">8</button>
+            <button type="button" class="button white" onclick="appendContent('9')">9</button>
+            <button type="button" class="button red" onclick="appendContent('*')">×</button>
+            <button type="button" class="button white" onclick="appendContent('4')">4</button>
+            <button type="button" class="button white" onclick="appendContent('5')">5</button>
+            <button type="button" class="button white" onclick="appendContent('6')">6</button>
+            <button type="button" class="button red" onclick="appendContent('-')">-</button>
+            <button type="button" class="button white" onclick="appendContent('1')">1</button>
+            <button type="button" class="button white" onclick="appendContent('2')">2</button>
+            <button type="button" class="button white" onclick="appendContent('3')">3</button>
+            <button type="button" class="button red" onclick="appendContent('+')">+</button>
+            <button type="button" class="zero-button button white" onclick="appendContent('0')">0</button>
+            <button type="button" class="button white" onclick="appendContent('.')">.</button>
+            <button type="button" class="redbackground" onclick="calculate()">=</button>
+        </div>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>
